@@ -1,0 +1,68 @@
+
+##############################################
+# setting up structure
+##############################################
+project="first-django"
+
+# name of the application
+app="webAPI"
+
+# name of sub-application
+subapp="cp"
+##############################################
+
+###############################################
+# no need to change this
+##############################################
+cd /home/jason/git-repo/django-projects
+mkdir $project
+cd $project
+echo "project file is created"
+##############################################
+
+##############################################
+# A virtual environment to store our packages
+##############################################
+# upgrade pip
+pip install msgpack
+pip install --upgrade pip
+pip install virtualenv
+##############################################
+
+##############################################
+# create the environment to hold our requirements.
+##############################################
+virtualenv env -p python3.6
+##############################################
+
+##############################################
+# activate environment
+##############################################
+source env/bin/activate
+##############################################
+
+##############################################
+# install Django
+##############################################
+pip install django
+
+##############################################
+# creating the app URL
+##############################################
+django-admin startproject $app
+
+##############################################
+# creating the app
+##############################################
+cd $app
+python manage.py startapp $subapp
+
+##############################################
+# migrate changes
+##############################################
+python manage.py migrate
+
+##############################################
+# start web server
+##############################################
+python manage.py runserver
