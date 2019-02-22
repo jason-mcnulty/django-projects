@@ -1,0 +1,28 @@
+/* this is how to comment css */
+
+/* ###################################################### */
+/* Basic format for a CSS file
+
+select tag{
+property: value;
+} */
+
+/* ###################################################### */
+
+/* ###################################################### */
+/* This will link the color to the tag of H1 */
+li{
+color: green;
+}
+
+h1{
+color: rgb(9, 178, 239);
+}
+
+h4{
+  color: rgba(9, 178, 239,50) /* The fourth octect is for how transparent the text is */
+}
+
+p{
+color: #ef7c09; /*This is a HEX code */
+}

@@ -1,0 +1,36 @@
+/* body{
+  background: url(http://static.simpledesktops.com/uploads/desktops/2011/12/14/octopus.png);
+} */
+
+/* h1 {
+  color: #f7f957
+} */
+
+/* If you want to call a class such as firstDIV, you start with a dot */
+
+.firstDiv{
+  color: red;
+}
+
+.secondDiv{
+  color: blue;
+}
+
+/* To all an ID (single item), you use a #  */
+
+#singledout{
+  color: green;
+  text-decoration: line-through;
+}
+
+/* The * is a wildcard and wll select every element (except for IDs) */
+/*
+*{
+  color: black;
+} */
+
+/* This will change all anchr tags (pointing to URLs) that are inside a list to a different color */
+
+li a{
+  color: red;
+}

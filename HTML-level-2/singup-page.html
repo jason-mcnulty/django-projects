@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Course Sign Up</title>
+  </head>
+  <body>
+
+
+    <h1>Course Sign Up Page</h1>
+    <h3>Please Note: First Name, Last Name, Password and Email are required.</h3>
+
+    <form action="thankyou.html" method="get"> <!-- This will link to a different page after the form is complete -->
+      <label for="firstname">First Name:</label>
+      <input id="firstname" type="text" name="firstname" placeholder="First Name" required>
+
+<!-- A handy tip is to use the <p> to create blocks of empty text to add spae to the from. -->
+<p></p>
+<p></p>
+      <label for="lastname">Last Name: </label>
+      <input id="lastname" type="text" name="lastname" placeholder="Last Name" required>
+
+<p></p>
+<p></p>
+      <label for="mail">Emal Address: </label>
+      <input id="mail" type="email" name="email" placeholder="email@gmail.com" required>
+<p></p>
+<p></p>
+      <label for="pass">Password: </label>
+      <input id="pass" type="password" name="" required>
+
+    <h3>Are you over the age of 18?</h3>
+
+    <!-- Radio button Yes:-->
+       <label for="over18">Yes</label>
+       <input id="over18" type="radio" name="over18" value="Yes"> <!-- name="loc" This is how the buttons are linked.-->
+    <!-- ####################################################################### -->
+    <!-- Radio button No:-->
+    <label for="under18">No</label>
+    <input id="under18" type="radio" name="over18" value="No"> <!-- name="loc" This is how the buttons are linked.-->
+    <!-- ####################################################################### -->
+
+
+    <!-- ####################################################################### -->
+    <!-- Credit card info -->
+    <h2>Do you have a credit card or PayPal?</h2>
+    <select name="payment">
+      <option value="credit">Credit Card</option>
+      <option value="paypal">PayPal</option>
+    </select>
+
+<p></p>
+
+<!-- Adding the submit button -->
+    <input type="submit" name="" value="submit">
+<!-- ####################################################################### -->
+    </form>
+
+
+
+  </body>
+</html>
