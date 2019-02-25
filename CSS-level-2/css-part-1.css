@@ -1,0 +1,20 @@
+h1{
+font-family: 'Raleway', sans-serif;
+/* You can also type in a font that is mostlikely used such as "Arial" */
+text-align: center;
+}
+
+p{
+font-family: 'Lato', sans-serif;
+
+}
+
+body{
+  font-size: 20px;
+}
+
+h2{
+  font-family: 'BeonRegular';
+   font-weight: normal;
+   font-style: normal; 
+}

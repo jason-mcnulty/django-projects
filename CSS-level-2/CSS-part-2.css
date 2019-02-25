@@ -1,0 +1,21 @@
+h1{
+  font-family: 'BeonRegular';
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+}
+
+#top{
+  border: 4px solid blue;
+  width: 10%;   /* This will take up 10% of the total page */
+  text-align: center;   /*This will aling to the center of the total width of the text box */
+  margin: auto;
+}
+
+#bottom {
+border: 4px solid red;
+width: 50%;
+padding: 200px;
+text-align: center;
+margin: auto;
+}

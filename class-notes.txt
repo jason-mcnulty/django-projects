@@ -1,1 +1,9 @@
 pip install django==1.11
+
+
+
+Two good sites for fornts.
+
+https://fonts.google.com/
+
+https://fontlibrary.org/
