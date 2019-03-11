@@ -16,6 +16,25 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+######################################################
+# Here we are creating the TEMPLATE_DIR var to link it to the templets directory
+TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+
+PITCURES_DIR = os.path.join(BASE_DIR, "pictures")
+
+CSS_DIR = os.path.join(BASE_DIR, "css")
+
+######################################################
+# This is to test out directory varables
+######################################################
+# print ("Base DIR =" + BASE_DIR)
+# print("Template DIR =" + TEMPLATE_DIR)
+#print ("CSS DIR =" + CSS_DIR)
+#print ("PICTURES DIR =" + PITCURES_DIR)
+######################################################
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -37,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'first_app'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +74,7 @@ ROOT_URLCONF = 'first_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR,CSS_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +86,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'first_project.wsgi.application'
 
