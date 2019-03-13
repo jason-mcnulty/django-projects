@@ -7,7 +7,7 @@ def index(request):
     #url = 'http://www.omdbapi.com/?t=back+to+the+future&apikey=676ef45a'
 
     url = 'http://www.omdbapi.com/?t={}&apikey=676ef45a'
-    movie = 'xxx'
+    movie = 'braveheart'
 
     r = requests.get(url.format(movie)).json()
     #print(r.text)
