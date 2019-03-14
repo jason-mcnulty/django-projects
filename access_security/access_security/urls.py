@@ -18,7 +18,7 @@ from django.urls import include, path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('index/', include('index.urls')),
+    path('', include('index.urls')),
     path('citrix/', include('citrix.urls')),
     path('pulse_secure/', include('pulse_secure.urls')),
     path('admin/', admin.site.urls),
