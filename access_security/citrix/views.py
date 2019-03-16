@@ -8,13 +8,7 @@ from django.shortcuts import render, HttpResponse
 # def citrix(request):
 #     return HttpResponse("This is the Citrix page citrix.views.py.")
 
-
-
-
-
-
-
-def citrix(request):
+def CTXZeroOne(request):
 
     ssl = 'https://'
     host1 = 'va10pctxns001.mgmt.wellpoint.com'
@@ -28,27 +22,24 @@ def citrix(request):
     url =  ssl + host1 + api + service
 
     #assigning the username and password to a variable by calling upon the function
-    username = '@@@@@'
-    passwd = '@@@@@'
+    username = 'ac89458'
+    passwd = 'Jayantliz2'
 
     #this is where the magic happens...
     myResponse = requests.get(url,auth=HTTPBasicAuth((username), (passwd)), verify=False)
     jData = json.loads(myResponse.content)
 
     for aaa_id,aaa_info in jData.items():
-        print('!')
-
-
-
+        print("\nAAA ID:", aaa_id)
 
     for key in aaa_info:
-        print('@')
+        print(key + ':', aaa_info[key])
 
-    print (aaa_info['aaacuricaonlyconn'])
-    print (aaa_info['aaacuricasessions'])
+    CTXZeroOne = {
+    'aaacuricaonlyconn' : aaa_info['aaacuricaonlyconn'],
+    'aaacuricasessions' : aaa_info['aaacuricasessions'],
+    }
 
 
 
-
-
-    return render(request, 'citrix/index.html')
+    return render(request, 'citrix/index.html', context=CTXZeroOne)

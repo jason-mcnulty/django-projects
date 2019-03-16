@@ -6,5 +6,6 @@ from . import views
 app_name = 'citrix'
 
 urlpatterns = [
-    path('', views.citrix, name='citrix'),
+    path('', views.CTXZeroOne, name='citrix'),
+
 ]
