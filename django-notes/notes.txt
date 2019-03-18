@@ -20,8 +20,8 @@ python manage.py runserver
 
 
 
-
-
-
-Bata testing 12.1 
+#################################
+conda install -c anaconda beautifulsoup4
+conda update -n base -c defaults conda
+#################################
 
