@@ -1,102 +1,70 @@
 {% load static %}
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Index</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Network Security</title>
 
-    <style>
-
-      body
-      {
-        color blue;
-
-      }
-
-        .my-container{
-          border 3px solid black;
-        }
-
-        .my-row {
-          border 3px solid red;
-        }
-
-        .my-co {
-
-          border 3px solid gren;
-        }
-
-    </style>
-
-
-
-
-
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <!-- NAVBAR  -->
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="navbar-brand" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+  </div>
+</nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Network Security</a>
+<main role="main">
 
-      <!-- Add a "hamburger". Remember to add jQuery and JavaScript CDNs -->
-      <!-- at the bottom of the body section for this to work -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Add a link to the Signup page -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="navbar-nav">
-        </div>
-      </div>
-
-    </nav>
-
-
-
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
     <div class="container">
-      <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-5">Please Seclect an Application</h1>
-          <p>Each application will run a series of API calls.</p>
-      </div><!-- /.jumbotron -->
-    </div><!-- /.container -->
-
-
-
-    <div class="container my-container">
-      <div class="row my-row">
-        <div class="col-md-4 col-lg-4 px-4 my-co"><a href="{% url 'citrix:citrix' %}"><img src="{% static '/img/citrix.png' %}"</a></div>
-        <div class="col-md-4 col-lg-4 px-4 my-co"><a href="{% url 'pulse_secure:pulse_secure' %}"><img src="{% static '/img/pulse.png' %}"</a></div>
+      <h1 class="display-3">Welcome</h1>
+        <p>To get started, click the icon of the solution you are intrested in.The data returned is retreived via API and is real-time data.</p>
+        <p>This portal is not intended to be used for long-term reporting.</p>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <!-- <h2>Citrix</h2> -->
+          <div class="col-md-4 col-lg-4 px-4 my-co"><a href="{% url 'citrix:citrix' %}"><img src="{% static '/img/citrix.png' %}"</a></div>
+      </div>
+      <div class="col-md-4">
+          <div class="col-md-4 col-lg-4 px-4 my-co"><a href="{% url 'pulse_secure:pulse_secure' %}"><img src="{% static '/img/pulse.png' %}"</a></div>
+      </div>
+      <div class="col-md-4">
         <div class="col-md-4 col-lg-4 px-4 my-co"><a href="{% url 'citrix:citrix' %}"><img src="{% static '/img/firewall.png' %}"</a></div>
-        <!-- <div class="col-lg-4 col- px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/O83SF2RB6D.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5JVPSVP7EI.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/C5Y10KIIHA.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" alt=""></div> -->
       </div>
     </div>
+  </div>
+</main>
 
-
-
-
-
-        <!-- <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/90V03Q5Y60.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/O83SF2RB6D.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5JVPSVP7EI.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/C5Y10KIIHA.jpg" alt=""></div>
-        <div class="col-lg-4 col-6 px-0"><img class="img-thumbnail img-fluid" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" alt=""></div>
-     -->
-
-
-  <!-- Need to have JQuery and Javascript for DropDown Actions to work -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  </body>
+<footer class="container">
+  <p>&copy; Anthem Network Security 2019</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
 </html>
