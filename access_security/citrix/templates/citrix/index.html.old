@@ -1,63 +1,90 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <title>Citrix</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
-      <!-- <link rel="stylesheet" href="{% static '/css/index.css' %}"> -->
-    <link rel="stylesheet" href="{% static 'css/citrix.css' %}"
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Network Security</title>
 
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<div>
-  <br>
-  <h2>Host Name: {{ host_name01 }}</h2>
-  <h3>Open ICA Connections: {{ aaacuricaonlyconn01 }}</h3>
-  <h3>Gateway Connections: {{ aaacuricasessions01 }}</h3>
-  <br>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="navbar-brand" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+  </div>
+</nav>
+
+<main role="main">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col">
+      <!-- <h2>Citrix</h2> -->
+      <div class="col">
+        <h2>{{ host_name01 }}</h2>
+        <p>Open ICA Connections: {{ aaacuricaonlyconn01 }}</p>
+        <p>Gateway Connections: {{ aaacuricasessions01 }}</p>
+      </div>
+    </div>
+    <div class="col">
+       <h2>{{ host_name02 }}</h2>
+       <p>Open ICA Connections: {{ aaacuricaonlyconn02 }}</p>
+       <p>Gateway Connections: {{ aaacuricasessions02 }}</p>
+    </div>
+    <div class="col">
+      <h2>{{ host_name03 }}</h2>
+      <p>Open ICA Connections: {{ aaacuricaonlyconn03 }}</p>
+      <p>Gateway Connections: {{ aaacuricasessions03 }}</p>
+    </div>
+  </div>
+  <div class="col">
+     <h2>{{ host_name04 }}</h2>
+     <p>Open ICA Connections: {{ aaacuricaonlyconn04 }}</p>
+     <p>Gateway Connections: {{ aaacuricasessions04 }}</p>
+  </div>
+  <div class="col">
+    <h2>{{ host_name05 }}</h2>
+    <p>Open ICA Connections: {{ aaacuricaonlyconn05 }}</p>
+    <p>Gateway Connections: {{ aaacuricasessions05 }}</p>
+  </div>
+</div>
 </div>
 
-
-<div>
-  <br>
-  <h2>Host Name: {{ host_name02 }}</h2>
-  <h3>Open ICA Connections: {{ aaacuricaonlyconn02 }}</h3>
-  <h3>Gateway Connections: {{ aaacuricasessions02 }}</h3>
-  <br>
-</div>
-
-<div>
-  <br>
-  <h2>Host Name: {{ host_name03 }}</h2>
-  <h3>Open ICA Connections: {{ aaacuricaonlyconn03 }}</h3>
-  <h3>Gateway Connections: {{ aaacuricasessions03 }}</h3>
-  <br>
-</div>
-
-<div>
-  <br>
-  <h2>Host Name: {{ host_name04 }}</h2>
-  <h3>Open ICA Connections: {{ aaacuricaonlyconn04 }}</h3>
-  <h3>Gateway Connections: {{ aaacuricasessions04 }}</h3>
-  <br>
-</div>
-
-<div>
-  <br>
-  <h2>Host Name: {{ host_name05 }}</h2>
-  <h3>Open ICA Connections: {{ aaacuricaonlyconn05 }}</h3>
-  <h3>Gateway Connections: {{ aaacuricasessions05 }}</h3>
-  <br>
-</div>
 
 <a href="{% url 'index:index' %}"><img src="{% static '/img/back.png' %}" alt=""></a>
 
 
-
+<!-- <footer class="container">
+  <p>&copy; Anthem Network Security 2019</p>
+</footer> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
 </html>

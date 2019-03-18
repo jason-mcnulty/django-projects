@@ -10,7 +10,9 @@
     <title>Network Security</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -40,50 +42,92 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
-    <div class="col">
-      <!-- <h2>Citrix</h2> -->
-      <div class="col">
-        <h2>{{ host_name01 }}</h2>
-        <p>Open ICA Connections: {{ aaacuricaonlyconn01 }}</p>
-        <p>Gateway Connections: {{ aaacuricasessions01 }}</p>
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> {{ host_name01 }} </h5>
+        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn01 }}</p>
+        <p class="card-text">Gateway Connections: {{ aaacuricasessions01 }}</p>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
-    <div class="col">
-       <h2>{{ host_name02 }}</h2>
-       <p>Open ICA Connections: {{ aaacuricaonlyconn02 }}</p>
-       <p>Gateway Connections: {{ aaacuricasessions02 }}</p>
-    </div>
-    <div class="col">
-      <h2>{{ host_name03 }}</h2>
-      <p>Open ICA Connections: {{ aaacuricaonlyconn03 }}</p>
-      <p>Gateway Connections: {{ aaacuricasessions03 }}</p>
-    </div>
   </div>
-  <div class="col">
-     <h2>{{ host_name04 }}</h2>
-     <p>Open ICA Connections: {{ aaacuricaonlyconn04 }}</p>
-     <p>Gateway Connections: {{ aaacuricasessions04 }}</p>
-  </div>
-  <div class="col">
-    <h2>{{ host_name05 }}</h2>
-    <p>Open ICA Connections: {{ aaacuricaonlyconn05 }}</p>
-    <p>Gateway Connections: {{ aaacuricasessions05 }}</p>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> {{ host_name02 }} </h5>
+        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn02 }}</p>
+        <p class="card-text">Gateway Connections: {{ aaacuricasessions02 }}</p>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> {{ host_name03 }} </h5>
+        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn03 }}</p>
+        <p class="card-text">Gateway Connections: {{ aaacuricasessions03 }}</p>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> {{ host_name04 }} </h5>
+        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn04 }}</p>
+        <p class="card-text">Gateway Connections: {{ aaacuricasessions04 }}</p>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-<a href="{% url 'index:index' %}"><img src="{% static '/img/back.png' %}" alt=""></a>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> {{ host_name05 }} </h5>
+        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn05 }}</p>
+        <p class="card-text">Gateway Connections: {{ aaacuricasessions05 }}</p>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      </div>
+    </div>
+  </div>
+
+<!-- <div class="container">
+  <a href="{% url 'index:index' %}"><img src="{% static '/img/back.png' %}" alt=""></a>
+</div> -->
 
 
 <footer class="container">
-  <p>&copy; Anthem Network Security 2019</p>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+
+      </div>
+      <div class="col-lg">
+        <a href="{% url 'index:index' %}"><img src="{% static '/img/back.png' %}" alt=""></a>
+      </div>
+      <div class="col-lg">
+
+      </div>
+    </div>
+  </div>
+
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
