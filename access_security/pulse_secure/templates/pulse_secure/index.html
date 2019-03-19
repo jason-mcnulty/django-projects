@@ -49,19 +49,19 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"> {{ host_name01 }} </h5>
-        <p class="card-text">{{ results }}</p>
-        <!-- <p class="card-text">Gateway Connections: {{ aaacuricasessions01 }}</p> -->
+        <p class="card-text">{{ results01 }}</p>
+
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
   </div>
 
-  <!-- <div class="col-sm-6">
+  <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"> {{ host_name02 }} </h5>
-        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn02 }}</p>
-        <p class="card-text">Gateway Connections: {{ aaacuricasessions02 }}</p>
+        <p class="card-text">{{ results02 }}</p>
+
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
@@ -73,8 +73,8 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"> {{ host_name03 }} </h5>
-        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn03 }}</p>
-        <p class="card-text">Gateway Connections: {{ aaacuricasessions03 }}</p>
+        <p class="card-text">{{ results03 }}</p>
+
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
@@ -83,9 +83,9 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"> {{ host_name04 }} </h5>
-        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn04 }}</p>
-        <p class="card-text">Gateway Connections: {{ aaacuricasessions04 }}</p>
+        <h5 class="card-title"> {{ host_name_mo01 }} </h5>
+        <p class="card-text">{{ results_mo01 }}</p>
+
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
@@ -97,14 +97,25 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"> {{ host_name05 }} </h5>
-        <p class="card-text">Open ICA Connections: {{ aaacuricaonlyconn05 }}</p>
-        <p class="card-text">Gateway Connections: {{ aaacuricasessions05 }}</p>
+        <h5 class="card-title"> {{ host_name_mo02 }} </h5>
+        <p class="card-text">{{ results_mo02 }}</p>
+
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
       </div>
     </div>
-  </div> -->
+  </div>
 
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> {{ host_name_mo03 }} </h5>
+          <p class="card-text">{{ results_mo03 }}</p>
+
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        </div>
+      </div>
+    </div>
 <!-- <div class="container">
   <a href="{% url 'index:index' %}"><img src="{% static '/img/back.png' %}" alt=""></a>
 </div> -->
