@@ -49,31 +49,12 @@ def pulse_secure(request):
     #we use the html parser to parse the url content and store it in a variable.
 
     print (page_content)
+
+
     pulse_secure = {
-
-    'host_name01' : "vappsavpn01",
-
-    'page_content' : 'page_content'
+        "results" : (page_content)
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     return render(request, 'pulse_secure/index.html', context=pulse_secure)

@@ -23,5 +23,6 @@ python manage.py runserver
 #################################
 conda install -c anaconda beautifulsoup4
 conda update -n base -c defaults conda
+conda install xmltodict
 #################################
 

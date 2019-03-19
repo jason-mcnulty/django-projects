@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 from requests.auth import HTTPBasicAuth
 
+
 ssl = 'https://'
 host = 'vappsavpn01-int.internal.das'
 check = '/dana-na/healthcheck/healthcheck.cgi?status=all'
@@ -32,7 +33,22 @@ page_response = requests.get(url,auth=HTTPBasicAuth((username), (passwd)), verif
 
 # page_response = requests.get(url, timeout=5)
 # here, we fetch the content from the url, using the requests library
-page_content = BeautifulSoup(page_response.content, "html.parser")
+# page_content = BeautifulSoup(page_response.content, "html.parser")
 #we use the html parser to parse the url content and store it in a variable.
 
-print (page_content)
+page_content = BeautifulSoup(page_response.text, "html.parser")
+# page_content = BeautifulSoup(page_response.content, "html.parser")
+
+
+#we use the html parser to parse the url content and store it in a variable.
+
+
+# tree = ET.fromstring(page_content)
+# print (tree)
+
+
+print(page_content)
+#
+#
+#
+# papers.append({'CPU-UTILIZATION': info[1], 'SSL-CONNECTION-COUNT': info[1], 'USER-COUNT': info[1]})
